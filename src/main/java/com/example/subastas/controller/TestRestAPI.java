@@ -16,7 +16,7 @@ public class TestRestAPI {
     @PreAuthorize("hasAuthority('SCOPE_USER')")
     public Map<String,Object> dataTest(Authentication authentication){
         return Map.of(
-                "message","Data Test",
+                "message","Data Test, holaaaaaaaaaaaaaaaaaa",
                 "username",authentication.getName(),
                 "authorities",authentication.getAuthorities()
         );
